@@ -2,8 +2,9 @@
   "name": "koa-bodyparser",
   "version": "4.2.0",
   "description": "a body parser for koa",
-  "main": "index.js",
+  "main": "index.d.js",
   "scripts": {
+    "compile": "babel index.js -o index.d.js",
     "test": "make test"
   },
   "repository": {
@@ -28,6 +29,8 @@
   "homepage": "https://github.com/koajs/body-parser",
   "devDependencies": {
     "autod": "2.4.2",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
     "istanbul": "^0.4.5",
     "koa": "^2.0.1",
     "mocha": "^3.2.0",
